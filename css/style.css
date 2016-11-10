@@ -1,55 +1,54 @@
-* { 
-	margin: 0; 
+* {
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-h2 { 
+h2 {
 	display: inline-block;
 /* 	text-align: center; */
 }
-
 
 /* -------------------------------------------- INTRO  ------------------------------------------- */
 /* -------------------------------------------- PAGE ------------------------------------------- */
 
 
-.headerimagepage { 
+.headerimagepage {
 	display: none;
 }
 
 
-.notblock { 
+.notblock {
 	width: 100%;
 	height: 100px;
 	display: none;
 	justify-content: center;
-	align-items: center; 
+	align-items: center;
 	align-content: center;
 }
 
 
 
-.notblock2 { 
+.notblock2 {
 	width: 100%;
 	height: 40px;
 	background: #F9F9FA;
 }
 
-.notblock3 { 
+.notblock3 {
 	width: 100%;
 	height: 35px;
 	background: #f2f3f5;
 }
 
-.notblock4 { 
+.notblock4 {
 	width: 100%;
 	height: 35px;
 	background: #f2f3f5;
 	display: block;
 }
 
-.notblock5 { 
+.notblock5 {
 	width: 100%;
 	height: 55px;
 	background: #f2f3f5;
@@ -58,13 +57,13 @@ h2 {
 }
 
 
-#view:hover { 
+#view:hover {
 	color: #d2527f;
 	font-weight: 700;
 }
 
-.bg { 
-	display: flex; 
+.bg {
+	display: flex;
 	/* justify-content: center; aligns content up/down */
 	align-items: center;
 	/* 	align-content: center; aligns content  */
@@ -74,47 +73,47 @@ h2 {
 	width: auto;
 	animation-name: fadein;
     animation-duration: 3s;
-    align-content: center; 
+    align-content: center;
 }
 
-.bg h2 { 
+.bg h2 {
 	font-weight: 200;
 }
 
-.bg h1 { 
+.bg h1 {
 	line-height: 2px;
 }
 
 
-.text { 
-	display: flex; 
-	flex-direction: row; 
-	justify-content: center; 
-	align-content: center; 
+.text {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
 	align-items: center;
 	margin-top: 50px;
 	animation-name: mymove;
 	animation-duration: 2s;
-	padding-left: 20px; 
+	padding-left: 20px;
 }
 
 
-.twoname { 
-	display:flex; 
+.twoname {
+	display:flex;
 	justify-content: space-between;
 	flex-direction: row;
 	align-content: space-between;
 }
 
 
-.textfadeout { 
-	
+.textfadeout {
+
 	animation-name: mymove6;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
-#view {  
+#view {
 	animation-name: mymove;
 	animation-duration: 1.3s;
 	position: relative;
@@ -125,14 +124,14 @@ h2 {
 	flex-wrap: wrap;
 }
 
-#myname { 
+#myname {
 	animation-name: mymove2;
 	animation-duration: 1s;
 	position: relative;
 	animation-fill-mode: forwards;
 }
 
-#lastname { 
+#lastname {
 	animation-name: mymove2;
 	animation-duration: 1.5s;
 	position: relative;
@@ -141,7 +140,7 @@ h2 {
 }
 
 
-#designer { 
+#designer {
 	animation-name: mymove3;
 	animation-duration: 1.6s;
 	position: relative;
@@ -149,12 +148,13 @@ h2 {
 	text-align: center;
 }
 
-#intropage { 
+#intropage {
 	justify-content: center;
+  display: none;
 }
 
 
-#dash { 
+#dash {
 	animation-name: mymove;
 	animation-duration: 1.5s;
 	position: relative;
@@ -163,7 +163,7 @@ h2 {
 }
 
 
-#line { 
+#line {
 	animation-name: mymove;
 	animation-duration: 1.5s;
 	position: relative;
@@ -171,7 +171,7 @@ h2 {
 	animation-timing-function: ease-in-out;
 }
 
-#reel { 
+#reel {
 	animation-name: mymove;
 	animation-duration: 1.8s;
 	position: relative;
@@ -184,12 +184,12 @@ h2 {
 	cursor: pointer;
 }
 
-#reel:hover { 
+#reel:hover {
 	color: #d2527f;
 	font-weight: 700;
 }
 
-.text h2 { 
+.text h2 {
 	padding-left: 0px;
 	padding-right: 30px;
 	font-size: 1.05em;
@@ -197,18 +197,18 @@ h2 {
 	color: slategray;
 }
 
-.text a { 
+.text a {
 	font-size: 1.03em;
 }
 
-h1 { 
+h1 {
 	font-family: 'Roboto';
 	color: black;
 	font-size: 3em;
 	line-height: 10px;
 }
 
-h2 { 
+h2 {
 	font-family: 'Roboto';
 	color: black;
 	font-size: 1.8em;
@@ -221,12 +221,12 @@ h2 {
 
 
 button {
-  
+
   background: #eb99eb;
   color: white;
-  
-  
-  
+
+
+
   margin-top: 40px;
   font-family: 'Roboto';
   -webkit-border-radius: 7;
@@ -239,10 +239,10 @@ button {
   margin-bottom: 5px;
   font-weight: 100;
   padding: 9px 26px 9px 26px;
-  
+
 }
 
- 
+
 
 button:hover {
   background: #b063b0;
@@ -254,7 +254,7 @@ button:hover {
   text-decoration: none;
 }
 
-#btn:hover { 
+#btn:hover {
 	background: #b063b0;
 }
 
@@ -266,9 +266,9 @@ button:hover {
 /* -------------------------------------------- IMAGE BLOCK PAGE ------------------------------------------- */
 
 
-.headercontainer { 
+.headercontainer {
 	display: none;
-	flex-direction: row; 
+	flex-direction: row;
 	justify-content: flex-end;
 	align-content: space-between;
 	align-items: flex-start;
@@ -279,7 +279,7 @@ button:hover {
 	padding-right: 40px;
 }
 
-.headerlinks {  
+.headerlinks {
 	flex-direction: row;
 	padding: 5px;
 	line-height: 1em;
@@ -289,43 +289,43 @@ button:hover {
 }
 
 
-#aclogo { 
+#aclogo {
 	width: 100px;
-	height: 100px; 
+	height: 100px;
 	padding-right: 60px;
-	padding-top: 10px; 
+	padding-top: 10px;
 	padding-bottom: 45px;
 	padding-left: 10px;
-	/* right: 65vw; */ 
+	/* right: 65vw; */
 	left: 10vw;
 	position: absolute;
 	top: 30px;
 }
 
-#email { 
-	font-family: 'Roboto'; 
-	font-weight: 100; 
+#email {
+	font-family: 'Roboto';
+	font-weight: 100;
 	color: grey;
 	font-size: .99em;
 	cursor: pointer;
 	padding: 10px;
 }
 
-#resume { 
+#resume {
 	cursor: pointer;
-	font-family: 'Roboto'; 
-	font-weight: 100; 
+	font-family: 'Roboto';
+	font-weight: 100;
 	font-size: .99em;
 	padding: 10px;
 }
 
-#resume:hover { 
+#resume:hover {
 	color: #d2527f;
 	font-weight: 700;
 	cursor: pointer;
 }
 
-#email:hover { 
+#email:hover {
 	color: #d2527f;
 	font-weight: 700;
 	cursor: pointer;
@@ -334,40 +334,7 @@ button:hover {
 
 
 
-#close { 
-	width: 2%;
-	height: auto;
-	float: right;
-	top: -10px;
-	display: none;
-	cursor: pointer;
-	position: absolute;	
-	
-}
-
-#closebuttonintropage { 
-	width: 2%;
-	height: auto;
-	float: right;
-	top: 30px;
-	display: none;
-	cursor: pointer;
-	position: absolute;
-	
-}
-
-#closebutton1 { 
-	width: 2%;
-	height: auto;
-	float: right;
-	top: 30px;
-	display: none;
-	cursor: pointer;
-	position: absolute;
-	
-}
-
-#closebutton2 { 
+#close {
 	width: 2%;
 	height: auto;
 	float: right;
@@ -375,10 +342,32 @@ button:hover {
 	display: none;
 	cursor: pointer;
 	position: absolute;
-	
+
 }
 
-#closebutton3 { 
+#closebuttonintropage {
+	width: 2%;
+	height: auto;
+	float: right;
+	top: 30px;
+	display: none;
+	cursor: pointer;
+	position: absolute;
+
+}
+
+#closebutton1 {
+	width: 2%;
+	height: auto;
+	float: right;
+	top: 30px;
+	display: none;
+	cursor: pointer;
+	position: absolute;
+
+}
+
+#closebutton2 {
 	width: 2%;
 	height: auto;
 	float: right;
@@ -386,64 +375,75 @@ button:hover {
 	display: none;
 	cursor: pointer;
 	position: absolute;
-	
+
 }
 
-#closebutton4 { 
+#closebutton3 {
+	width: 2%;
+	height: auto;
+	float: right;
+	top: -10px;
+	display: none;
+	cursor: pointer;
+	position: absolute;
+
+}
+
+#closebutton4 {
 	width: 2%;
 	height: auto;
 	float: right;
 	top: 30px;
 	display: none;
 	cursor: pointer;
-	position: absolute;	
+	position: absolute;
 }
 
-#closebutton5 { 
+#closebutton5 {
 	width: 2%;
 	height: auto;
 	float: right;
 	top: 30px;
 	display: none;
 	cursor: pointer;
-	position: absolute;	
+	position: absolute;
 }
 
 
-#closebutton6 { 
+#closebutton6 {
 	width: 2%;
 	height: auto;
 	float: right;
 	top: 30px;
 	display: none;
 	cursor: pointer;
-	position: absolute;	
+	position: absolute;
 }
 
-#closebutton8 { 
+#closebutton8 {
 	width: 2%;
 	height: auto;
 	float: right;
 	top: 30px;
 	display: none;
 	cursor: pointer;
-	position: absolute;	
+	position: absolute;
 }
 
-#closebutton10 { 
+#closebutton10 {
 	width: 2%;
 	height: auto;
 	float: right;
 	top: 30px;
 	display: none;
 	cursor: pointer;
-	position: absolute;	
+	position: absolute;
 }
 
 
 
 /* Remove blue square from button after click */
-button:focus { 
+button:focus {
 	outline: 0;
 }
 
@@ -490,7 +490,7 @@ button:focus {
 
 
 
-.imagecontainer { 
+.imagecontainer {
 	justify-content: center;
 	align-content: center;
 	align-items: center;
@@ -500,23 +500,23 @@ button:focus {
 
 }
 
-#lilVideo { 
+#lilVideo {
 	display: block;
 	max-width: 100%;
 }
 
-#CMVideo { 
+#CMVideo {
 	display: block;
 	max-width: 100%;
 }
 
-#BenZVideo { 
+#BenZVideo {
 	display: block;
 	max-width: 100%;
 }
 
-.featurepage { 
-	width: 100vw; 
+.featurepage {
+	width: 100vw;
 	height: 100vh;
 	z-index: 600;
 	display: flex;
@@ -529,8 +529,8 @@ button:focus {
 	justify-content: center;
 }
 
-.featurepageResume { 
-	width: 100vw; 
+.featurepageResume {
+	width: 100vw;
 	height: 100vh;
 	z-index: 600;
 	display: flex;
@@ -543,8 +543,8 @@ button:focus {
 	justify-content: center;
 }
 
-.featurepagesecond { 
-	width: 80vw; 
+.featurepagesecond {
+	width: 80vw;
 	height: 100vh;
 	z-index: 600;
 	display: flex;
@@ -559,8 +559,8 @@ button:focus {
 	display: -moz-box;
 }
 
-.featurepagelong { 
-	width: 100vw; 
+.featurepagelong {
+	width: 100vw;
 	height: auto;
 	z-index: 600;
 	display: flex;
@@ -574,8 +574,8 @@ button:focus {
 }
 
 
-.featurepagevideo { 
-	width: 100vw; 
+.featurepagevideo {
+	width: 100vw;
 	height: 100vh;
 	z-index: 600;
 	display: flex;
@@ -589,23 +589,23 @@ button:focus {
 }
 
 
-.featurepagetext { 
-	width: 100vw; 
+.featurepagetext {
+	width: 100vw;
 	height: 80vh;
-	display: flex; 
+	display: flex;
 	text-align: center;
-	align-items: center; 
+	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
-.titlefeature { 
+.titlefeature {
 	display: block;
 /* 	padding-bottom: 50px; */
 	/* padding-top: 50px; */
 }
 
-.description { 
+.description {
 /* 	padding-bottom: 50px; */
 	font-family: 'Roboto';
 	font-weight: 100;
@@ -616,8 +616,8 @@ button:focus {
 }
 
 
-#featurepage2 { 
-	width: 60vw; 
+#featurepage2 {
+	width: 60vw;
 	height: 100vh;
 	background: white;
 	z-index: 2000;
@@ -625,7 +625,7 @@ button:focus {
 	opacity: 1;
 }
 
-.featurepagecontainer { 
+.featurepagecontainer {
 	display: none;
 	justify-content: center;
 	margin-top: 50px;
@@ -634,88 +634,88 @@ button:focus {
 }
 
 
-.featurePageContainerNike { 
+.featurePageContainerNike {
 	display: none;
 	justify-content: center;
 	top: 0;
-	align-content: center; 
+	align-content: center;
 	align-items: center;
 	width: 100vw;
 	max-width: 100%;
 	flex-direction: column;
 }
 
-.featurePageContainerCarnation { 
+.featurePageContainerCarnation {
 	display: none;
 	justify-content: center;
 	top: 0;
-	align-content: center; 
+	align-content: center;
 	align-items: center;
 	width: 100vw;
 	max-width: 100%;
 	flex-direction: column;
 }
 
-.featurePageContainerFlower { 
+.featurePageContainerFlower {
 	display: none;
 	justify-content: center;
 	top: 0;
-	align-content: center; 
+	align-content: center;
 	align-items: center;
 	width: 100vw;
 	max-width: 100%;
 	flex-direction: column;
 }
 
-.featurePageContainerResume { 
+.featurePageContainerResume {
 	display: none;
 	justify-content: center;
 	top: 0;
-	align-content: center; 
+	align-content: center;
 	align-items: center;
 	width: 100vw;
 	max-width: 100%;
 	flex-direction: column;
 }
 
-.featurePageContainerItFollows { 
+.featurePageContainerItFollows {
 	display: none;
 	justify-content: center;
 	top: 0;
-	align-content: center; 
+	align-content: center;
 	align-items: center;
 	width: 100vw;
 	max-width: 100%;
 	flex-direction: column;
 }
 
-.featurePageContainerLuxUi { 
+.featurePageContainerLuxUi {
 	display: none;
 	justify-content: center;
 	top: 0;
-	align-content: center; 
+	align-content: center;
 	align-items: center;
 	width: 100vw;
 	max-width: 100%;
 	flex-direction: column;
 }
 
-.featurePageContainerSmartW { 
+.featurePageContainerSmartW {
 	display: none;
 	justify-content: center;
 	top: 0;
-	align-content: center; 
+	align-content: center;
 	align-items: center;
 	width: 100vw;
 	max-width: 100%;
 	flex-direction: column;
 }
 
-.featurePageContainerBenZ { 
+.featurePageContainerBenZ {
 	display: none;
 	justify-content: center;
 	top: 0;
-	align-content: center; 
+	align-content: center;
 	align-items: center;
 	width: 100vw;
 	max-width: 100%;
@@ -723,19 +723,19 @@ button:focus {
 }
 
 
-.tools { 
-	display: flex; 
+.tools {
+	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 }
 
-.photoshopbox { 
-	height: 60px; 
+.photoshopbox {
+	height: 60px;
 	width: 60px;
 	background: #0A0055;
 	border: 4px solid #A0CBFE;
-	display: flex; 
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	justify-content: space-around;
@@ -743,12 +743,12 @@ button:focus {
 	margin-right: 30px;
 }
 
-.premierebox { 
-	height: 60px; 
+.premierebox {
+	height: 60px;
 	width: 60px;
 	background: #3A2641;
 	border: 4px solid #D757FF;
-	display: flex; 
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	justify-content: space-around;
@@ -756,12 +756,12 @@ button:focus {
 	margin-right: 30px;
 }
 
-.illustratorbox { 
-	height: 60px; 
+.illustratorbox {
+	height: 60px;
 	width: 60px;
 	background: #453A2F;
 	border: 4px solid #FF7A1A;
-	display: flex; 
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	justify-content: space-around;
@@ -770,12 +770,12 @@ button:focus {
 }
 
 
-.aftereffectsbox { 
-	height: 60px; 
+.aftereffectsbox {
+	height: 60px;
 	width: 60px;
 	background: #3F2C50;
 	border: 4px solid #D0A2FF;
-	display: flex; 
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	justify-content: space-around;
@@ -783,60 +783,60 @@ button:focus {
 	margin-right: 30px;
 }
 
-.illustratorbox h2 { 
+.illustratorbox h2 {
 	color: #FF7A1A;
 }
 
-.aftereffectsbox h2 { 
+.aftereffectsbox h2 {
 	color: #D0A2FF;
 }
 
-.findmore h3 { 
-	font-size: 1em; 
+.findmore h3 {
+	font-size: 1em;
 	font-family: 'Roboto';
 	color: darkgray;
-	font-weight: 100; 	
+	font-weight: 100;
 }
 
-.findmore { 
+.findmore {
 	padding-top: 30px;
 }
 
-#behance { 
+#behance {
 	color: #D757FF;
 	font-weight: 100;
 }
 
-.tooltitle h3 { 
+.tooltitle h3 {
 	font-weight: 100;
 	font-size: 1.1em;
 	font-family: 'Roboto';
 	color: darkgray;
 }
 
-.toolsused h3 { 
-	font-weight: 300; 
+.toolsused h3 {
+	font-weight: 300;
 	font-size: 1.1em;
 	font-family: 'Roboto';
 	color: darkgray;
-	
+
 }
 
-.photoshopbox h2 { 
+.photoshopbox h2 {
 	color: #A0CBFE;
 	text-align: center;
-}	
+}
 
-.premierebox h2 { 
+.premierebox h2 {
 	color: #D757FF;
 	text-align: center;
 }
 
-.featurePageContainerLilies { 
+.featurePageContainerLilies {
 	display: none;
 	justify-content: center;
 	top: 0;
-	align-content: center; 
+	align-content: center;
 	align-items: center;
 	width: 100vw;
 	max-width: 100%;
@@ -844,96 +844,96 @@ button:focus {
 }
 
 
-#nikeimage { 
+#nikeimage {
 	width: 70%;
 	height: auto;
 	display: block;
 }
 
-#nikeimagefull { 
-	display: block; 
-	width: 85%; 
-	height: auto; 
+#nikeimagefull {
+	display: block;
+	width: 85%;
+	height: auto;
 	box-sizing: border-box;
 }
 
-#frisbeeimagefull { 
-	display: block; 
-	width: 45%; 
-	height: auto; 
+#frisbeeimagefull {
+	display: block;
+	width: 45%;
+	height: auto;
 	box-sizing: border-box;
 }
 
 
 
-#luximagefull { 
-	display: block; 
-	width: 80%; 
-	height: auto; 
+#luximagefull {
+	display: block;
+	width: 80%;
+	height: auto;
 	box-sizing: border-box;
 }
 
-#resumeimage { 
-	display: block; 
-	width: 80%; 
-	height: auto; 
+#resumeimage {
+	display: block;
+	width: 80%;
+	height: auto;
 	box-sizing: border-box;
 }
 
-#resumeportait { 
+#resumeportait {
 	max-width: 90%;
 	box-sizing: border-box;
 	max-height: 80%;
 }
 
 
-#SmartWCoverFull { 
-	display: block; 
-	width: 100%; 
-	height: auto; 
+#SmartWCoverFull {
+	display: block;
+	width: 100%;
+	height: auto;
 	box-sizing: border-box;
 }
 
-#SmartWUserFlow { 
-	display: block; 
-	width: 80%; 
-	height: auto; 
+#SmartWUserFlow {
+	display: block;
+	width: 80%;
+	height: auto;
 	box-sizing: border-box;
 }
 
-#SmartWWireFrame { 
-	display: block; 
-	width: 80%; 
-	height: auto; 
+#SmartWWireFrame {
+	display: block;
+	width: 80%;
+	height: auto;
 	top: 0;
 	box-sizing: border-box;
 }
 
 
-#luxwireframe { 
-	display: block; 
-	width: 80%; 
-	height: auto; 
+#luxwireframe {
+	display: block;
+	width: 80%;
+	height: auto;
 	top: 0;
 	box-sizing: border-box;
 }
 
-#aceimagefull { 
-	display: block; 
-	width: 80%; 
-	height: auto; 
+#aceimagefull {
+	display: block;
+	width: 80%;
+	height: auto;
 	box-sizing: border-box;
 }
 
-#cherrylogo { 
-	height: auto; 
+#cherrylogo {
+	height: auto;
 	width: 12%;
 	padding-left: 40px;
 	padding-top: 40px;
 	padding-bottom: 0px;
 }
 
-a:link { 
+a:link {
 	text-decoration: none;
 	color: black;
 }
@@ -948,7 +948,7 @@ a:visited {
     color: black;
 }
 
-#smartlink:hover { 
+#smartlink:hover {
 	cursor:pointer;
 	color:#be90d4;
 /* 	font-weight: 400; */
@@ -975,7 +975,7 @@ a:visited {
   margin-top: 20px;
   width: 80vw;
   flex-flow: wrap;
-  
+
 }
 
 .flex-item {
@@ -999,20 +999,20 @@ a:visited {
 
 
 
-img { 
+img {
 /* 	display: block; */
 /* 	width: 100%; */
 }
 
-.flex-item img { 
+.flex-item img {
 	width: 100%;
 }
 
 
-.hover { 
+.hover {
 	background: rgba(0, 0, 0, .88);
 	opacity: 0;
-	z-index; 0; 
+	z-index; 0;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -1028,7 +1028,7 @@ img {
 	font-size: 1.1em;
 	font-weight: 500;
 	color: white;
-	
+
 }
 
 .hover h2 {
@@ -1039,7 +1039,7 @@ img {
 	font-style: italic;
 }
 
-.hover h2:hover { 
+.hover h2:hover {
 	color: #be90d4;
 	font-weight: 400;
 	cursor: pointer;
@@ -1065,19 +1065,19 @@ img {
 }
 
 
-.footer { 
-	display: none; 
-	justify-content: space-between; 
-	align-items: flex-start; 
+.footer {
+	display: none;
+	justify-content: space-between;
+	align-items: flex-start;
 	align-content: center;
-	height: 100px; 
+	height: 100px;
 	width: 100%;
-	padding: 40px; 
+	padding: 40px;
 }
 
 
 
-/* 
+/*
 
 ---------------------------------------- KEYFRAMES --------------------------------------------------
 ----------------------------------------------------------------------------------------------------
@@ -1118,33 +1118,33 @@ img {
     from {opacity:0.1; top: 0px;}
     to {opacity: 0.1; top: 100px;}
     to {opacity: 1; top: 120px;}
-   
-    
+
+
 }
 
 @keyframes mymove5 {
     from {opacity:0.1; top: 0px;}
     to {opacity: 0.1; top: 100px;}
     to {opacity: 1; top: 120px;}
-    
+
 }
 
 @keyframes mymove6 {
     from {opacity:1; top: 65vh;}
     to {opacity: 0; top: 120vh;}
-    
+
 }
 
 @keyframes mymove7 {
     from {opacity:1; top: 25vh;}
     to {opacity: 0; top: 55vh;}
-    
+
 }
 
 @keyframes mymove8 {
     from {opacity:1; top: 33vh;}
     to {opacity: 0; top: 75vh;}
-    
+
 }
 
 @keyframes mymove9 {
@@ -1177,19 +1177,19 @@ img {
 
 @media screen and (min-height: 0px) {
 
-	#resumeportait { 
-	display: block; 
-	width: 80%; 
-	height: auto; 
+	#resumeportait {
+	display: block;
+	width: 80%;
+	height: auto;
 	padding: 100px;
-		
+
 	}
-	
+
 
 }
 
 @media screen and (min-width: 0px) {
-	#view { 
+	#view {
 		animation-name: mymove10;
 		animation-duration: 1.3s;
 		position: relative;
@@ -1199,13 +1199,13 @@ img {
 		/* padding-left: 20px; */
 		padding: 30px;
 	}
-	
-	#dash { 
+
+	#dash {
 		display: none;
 	}
 
-	
-	#line { 
+
+	#line {
 		animation-name: mymove12;
 		animation-duration: 1.5s;
 		position: relative;
@@ -1214,7 +1214,7 @@ img {
 		padding: 5px;
 	}
 
-	#reel { 
+	#reel {
 		animation-name: mymove9;
 		animation-duration: 1.8s;
 		position: relative;
@@ -1226,19 +1226,19 @@ img {
 		padding-left: 35px;
 		cursor: pointer;
 	}
-	
-	.text { 
+
+	.text {
 		padding-left: 0px;
 		align-items: center;
 		align-content: center;
-		flex-direction: column; 
+		flex-direction: column;
 	}
-	
-	#aclogo { 
+
+	#aclogo {
 		width: 100px;
-		height: 100px; 
+		height: 100px;
 		padding-right: 60px;
-		padding-top: 10px; 
+		padding-top: 10px;
 		padding-bottom: 45px;
 		padding-left: 10px;
 		left: 8vw;
@@ -1248,7 +1248,7 @@ img {
 }
 
 @media screen and (min-width: 370px) {
-	#view { 
+	#view {
 		animation-name: mymove11;
 		animation-duration: 1.3s;
 		position: relative;
@@ -1256,8 +1256,8 @@ img {
 		animation-timing-function: ease-in-out;
 		cursor: pointer;
 	}
-	
-	#dash { 
+
+	#dash {
 		animation-name: mymove11;
 		animation-duration: 1.5s;
 		position: relative;
@@ -1266,12 +1266,12 @@ img {
 		display: flex;
 	}
 
-	
-	#line { 
+
+	#line {
 		display: none;
 	}
 
-	#reel { 
+	#reel {
 		animation-name: mymove11;
 		animation-duration: 1.8s;
 		position: relative;
@@ -1283,12 +1283,12 @@ img {
 		/* padding-left: 25px; */
 		cursor: pointer;
 	}
-	
-	.text { 
-		display: flex; 
-		flex-direction: row; 
-		justify-content: center; 
-		align-content: center; 
+
+	.text {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
 		align-items: center;
 		margin-top: 50px;
 		animation-name: mymove;
@@ -1299,32 +1299,32 @@ img {
 
 @media screen and (min-width: 0px) {
 
-    .headerlinks {  
+    .headerlinks {
 		left: 72%;
 		position: absolute;
 		top: 42px;
 	}
-	
 
-	.flex-item { 
-		width: 100%; 
+
+	.flex-item {
+		width: 100%;
 	}
 
-	h1 { 
+	h1 {
 		font-family: 'Roboto';
 		color: black;
 		font-size: 2.2em;
 		line-height: 10px;
 	}
 
-	h2 { 
+	h2 {
 		font-family: 'Roboto';
 		color: black;
 		font-size: 1.2em;
 		line-height: 0px;
 	}
 
-	.text h2 { 
+	.text h2 {
 		padding-left: 0px;
 		padding-right: 30px;
 		font-size: 1em;
@@ -1335,37 +1335,37 @@ img {
 
 
 
-#close { 
-	width: 27px; 
+#close {
+	width: 27px;
 	height: 27px;
 	right: 6vw;
 	top: 25px;
 }
 
-#SmartWUserFlow { 
-	display: block; 
-	width: 95%; 
-	height: auto; 
+#SmartWUserFlow {
+	display: block;
+	width: 95%;
+	height: auto;
 	box-sizing: border-box;
 }
 
 
-#closebutton1 { 
-	width: 27px; 
+#closebutton1 {
+	width: 27px;
 	height: 27px;
 	right: 6vw;
 	top: 25px;
 }
 
-#closebutton2 { 
-	width: 27px; 
+#closebutton2 {
+	width: 27px;
 	height: 27px;
 	right: 6vw;
 	top: 25px;
 }
 
-#closebutton3 { 
-	width: 27px; 
+#closebutton3 {
+	width: 27px;
 	height: 27px;
 	right: 6vw;
 	top: 25px;
@@ -1373,80 +1373,80 @@ img {
 
 
 
-#closebutton4 { 
-	width: 27px; 
+#closebutton4 {
+	width: 27px;
 	height: 27px;
 	right: 6vw;
 	top: 25px;
 }
 
-#closebutton5 { 
-	width: 27px; 
+#closebutton5 {
+	width: 27px;
 	height: 27px;
 	right: 6vw;
 	top: 25px;
 }
 
-#closebutton6 { 
-	width: 27px; 
+#closebutton6 {
+	width: 27px;
 	height: 27px;
 	right: 6vw;
 	top: 25px;
 }
 
-#closebutton8 { 
-	width: 27px; 
+#closebutton8 {
+	width: 27px;
 	height: 27px;
 	right: 6vw;
 	top: 25px;
 }
 
-#closebutton10 { 
-	width: 27px; 
+#closebutton10 {
+	width: 27px;
 	height: 27px;
 	right: 6vw;
 	top: 25px;
 }
 
-#closebuttonintropage { 
-	width: 27px; 
+#closebuttonintropage {
+	width: 27px;
 	height: 27px;
 	right: 8vw;
 	top: 25px;
 }
 
-.featurepage { 
+.featurepage {
 	width: 100vw;
 	height: 65vh;
 }
 
-.featurepagesecond { 
+.featurepagesecond {
 	width: 100vw;
 	height: 50vh;
 }
 
-.featurepagevideo { 
+.featurepagevideo {
 	width: 100vw;
 	height: 80vh;
 }
 
-.hover { 
+.hover {
 	display: none;
 }
 
-.notblock4 { 
+.notblock4 {
 	width: 100%;
 	height: 35px;
 	background: #f2f3f5;
 	display: block;
-}	
+}
 
 }
 
 
-@media screen and (min-width: 430px) { 
-	#closebuttonintropage { 
-	width: 27px; 
+@media screen and (min-width: 430px) {
+	#closebuttonintropage {
+	width: 27px;
 	height: 27px;
 	right: 6vw;
 	top: 25px;
@@ -1455,22 +1455,22 @@ img {
 
 @media screen and (min-width: 540px) {
 
-.flex-item { 
-	width: 100%; 
+.flex-item {
+	width: 100%;
 }
 
-.hover { 
+.hover {
 	display: block;
 }
 
-#aclogo { 
+#aclogo {
 	width: 100px;
-	height: 100px; 
+	height: 100px;
 	padding-right: 60px;
-	padding-top: 10px; 
+	padding-top: 10px;
 	padding-bottom: 45px;
 	padding-left: 10px;
-	/* right: 65vw; */ 
+	/* right: 65vw; */
 	left: 4vw;
 	position: absolute;
 	top: 30px;
@@ -1480,90 +1480,90 @@ img {
 }
 
 
-@media screen and (min-width: 600px) { 
-	
-	#close { 
+@media screen and (min-width: 600px) {
+
+	#close {
 		right: 3vw;
 		top: 2.9vw;
 	}
 
-	.headerlinks {  
+	.headerlinks {
 		left: 85%;
 		position: absolute;
 	}
-	.notblock4 { 
+	.notblock4 {
 		width: 100%;
 		height: 35px;
 		background: #f2f3f5;
 		display: none;
 	}
 
-	#closebutton1 { 
-		right: 3vw;
-		top: 3vw;
-	}	
-
-	#closebutton2 { 
+	#closebutton1 {
 		right: 3vw;
 		top: 3vw;
 	}
 
-	#closebutton3 { 
+	#closebutton2 {
+		right: 3vw;
+		top: 3vw;
+	}
+
+	#closebutton3 {
 		right: 3vw;
 		top: 3vw;
 	}
 
 
-	#closebutton6 { 
+	#closebutton6 {
 		right:3vw;
 		top: 2.9vw;
 	}
 
-	#closebutton4 { 
+	#closebutton4 {
 		right: 3vw;
 		top: 2.9vw;
 	}
 
-	#closebutton5 { 
+	#closebutton5 {
 		right: 3vw;
 		top: 2.9vw;
 	}
 
-	#closebuttonintropage { 
+	#closebuttonintropage {
 		right: 3vw;
 		top: 2.9vw;
 	}
 
-	#closebutton8 { 
+	#closebutton8 {
 		right: 3vw;
 		top: 2.9vw;
 	}
 
-	#closebutton10 { 
+	#closebutton10 {
 		right: 3vw;
 		top: 2.9vw;
 	}
 
-	#SmartWUserFlow { 
-		display: block; 
-		width: 90%; 
-		height: auto; 
+	#SmartWUserFlow {
+		display: block;
+		width: 90%;
+		height: auto;
 		box-sizing: border-box;
 	}
 
 
-	.featurepage { 
+	.featurepage {
 		width: 100vw;
 		height: 100vh;
 	}
 
-	.featurepagesecond { 
+	.featurepagesecond {
 		width: 100vw;
 		height: 100vh;
 	}
 
 
-	.featurepagevideo { 
+	.featurepagevideo {
 		width: 100vw;
 		height: 100vh;
 	}
@@ -1571,9 +1571,9 @@ img {
 }
 
 
-@media screen and (min-width: 800px) { 
-	
-	.flex-item { 
+@media screen and (min-width: 800px) {
+
+	.flex-item {
 		width: 50%;
 		display: -webkit-box;
         display: -moz-box;
@@ -1582,40 +1582,83 @@ img {
 		flex-flow: nowrap;
 		flex-direction: row;
 	}
-	
-	h1 { 
+
+	h1 {
 		font-family: 'Roboto';
 		color: black;
 		font-size: 2.8em;
 		line-height: 10px;
 	}
 
-	h2 { 
+	h2 {
 		font-family: 'Roboto';
 		color: black;
 		font-size: 1.8em;
 		line-height: 0px;
 	}
 
-	.text h2 { 
+	.text h2 {
 		padding-left: 0px;
 		padding-right: 30px;
 		font-size: 1.05em;
 		line-height: 1px;
 		color: slategray;
 	}
-	
+
 }
 
-@media screen and (min-width: 900px) { 
-	
-	.headerlinks {  
+/* State based display */
+#globalContainer.intro #intropage { display: block; }
+
+#globalContainer.portfolio .imagecontainer { display: flex; }
+#globalContainer.portfolio .headercontainer { display: flex; }
+
+#globalContainer.smartwatch #closebutton6 { display: block; }
+#globalContainer.smartwatch .featurePageContainerSmartW { display: flex; }
+
+#globalContainer.lux #closebutton5 { display: block; }
+#globalContainer.lux .featurePageContainerLuxUi { display: flex; }
+
+#globalContainer.nike #close { display: inline-block; }
+#globalContainer.nike .featurePageContainerNike { display: flex; }
+
+#globalContainer.carnation #closebutton10 { display: inline-block; }
+#globalContainer.carnation .featurePageContainerCarnation { display: flex; }
+
+#globalContainer.flower #closebutton2 { display: inline-block; }
+#globalContainer.flower .featurePageContainerFlower { display: flex; }
+
+#globalContainer.benz #closebutton3 { display: inline-block; }
+#globalContainer.benz .featurePageContainerBenZ { display: flex; }
+
+#globalContainer.follows #closebutton1 { display: inline-block; }
+#globalContainer.follows .featurePageContainerItFollows { display: flex; }
+
+#globalContainer.lillies #closebutton4 { display: inline-block; }
+#globalContainer.lillies .featurePageContainerLilies { display: flex; }
+
+#globalContainer.resume #closebutton8 { display: inline-block; }
+#globalContainer.resume .featurePageContainerResume { display: flex; }
+#globalContainer.resume .notblock { display: block; }
+#globalContainer.resume #resumeimage { display: block; }
+#globalContainer.resume #resumeportrait { display: none; }
+
+@media screen and (orientation : portrait) {
+  #globalContainer.resume #resumeimage { display: none; }
+  #globalContainer.resume #resumeportrait { display: block; }
+}
+
+
+
+@media screen and (min-width: 900px) {
+
+	.headerlinks {
 		left: 88%;
 		position: absolute;
 	}
-	
-	
-	
+
+
+
 	.flex-container {
   		padding: 0;
   		margin: 0;
@@ -1637,38 +1680,38 @@ img {
   		/* display: flex; */
   		flex-flow: wrap;
   		flex-wrap: wrap;
-  
-	}
-	
 
-	
+	}
+
+
+
 }
 
 
-@media screen and (min-width: 1000px) { 
-	
-	
-	.headerlinks {  
+@media screen and (min-width: 1000px) {
+
+
+	.headerlinks {
 		left: 90%;
 		position: absolute;
 	}
-	
 
-	#nikeimagefull { 
-		display: block; 
-		width: 80%; 
-		height: auto; 
+
+	#nikeimagefull {
+		display: block;
+		width: 80%;
+		height: auto;
 		box-sizing: border-box;
 	}
-	
-	.notblock5 { 
+
+	.notblock5 {
 		width: 100%;
 		height: 55px;
 		background: #f2f3f5;
 		display: none;
 		margin-top:30px;
 	}
-	
+
 	.flex-container {
   		padding: 0;
   		margin: 0;
@@ -1677,7 +1720,7 @@ img {
   		display: -moz-box;
   		display: -ms-flexbox;
   		display: -webkit-flex;
-  
+
   		-webkit-flex-flow: row wrap;
   		justify-content: center;
   		animation-name: fadein;
@@ -1688,22 +1731,22 @@ img {
   		width: 77vw;
   		/* display: flex; */
   		flex-flow: wrap;
-  
+
 	}
-	
-	
-	
+
+
+
 
 }
 
-@media screen and (min-width: 1250px) { 
+@media screen and (min-width: 1250px) {
 
-	
-	.headerlinks {  
+
+	.headerlinks {
 		left: 92%;
 		position: absolute;
 	}
-	
+
 	.flex-container {
   		padding: 0;
   		margin: 0;
@@ -1712,7 +1755,7 @@ img {
   		display: -moz-box;
   		display: -ms-flexbox;
   		display: -webkit-flex;
-  
+
   		-webkit-flex-flow: row wrap;
   		justify-content: center;
   		animation-name: fadein;
@@ -1723,12 +1766,8 @@ img {
   		width: 67vw;
   		/* display: flex; */
   		flex-flow: wrap;
-  
+
 	}
 
-	
+
 }
-
-
-
-

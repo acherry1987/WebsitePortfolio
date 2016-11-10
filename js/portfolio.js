@@ -1,6 +1,7 @@
 
 window.onload = function () {
 
+  var globalContainer = document.getElementById("globalContainer");
 	//About
 	var wholesite = document.getElementById("sitewrapper");
 	var contact = document.getElementById("contact");
@@ -62,292 +63,139 @@ window.onload = function () {
 	var acepage = document.getElementById("fl");
 	var footer = document.querySelector(".footer");
 	var golf = document.getElementById("golf");
-	var closebuttonintropage = document.getElementById("closebuttonintropage");
+	//var closebuttonintropage = document.getElementById("closebuttonintropage");
 	var pos = 0;
-	
+
 	var w = window.innerWidth;
     var h = window.innerHeight;
-    
-	
-    	
 
-	watchpage.addEventListener('click', function () {
-		featurepagecontainerSmartW.style.display = "flex";
-		closebutton6.style.display = "block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	golf.addEventListener('click', function () {
-		featurepagecontainerSmartW.style.display = "flex";
-		closebutton6.style.display = "block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
+  function gotoPage(state) {
+    window.location.hash = state;
+  }
 
-	luxpage.addEventListener('click', function () {
-		featurepagecontainerLux.style.display = "flex";
-		closebutton5.style.display = "block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	luximage.addEventListener('click', function () {
-		featurepagecontainerLux.style.display = "flex";
-		closebutton5.style.display = "block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	resumepage.addEventListener('click', function () {
-		featurepagecontainerResume.style.display = "flex";
-		closebutton8.style.display = "block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-		notblock.style.display = "block";
-		
-				if (w > h) {
-    				resumeWide.style.display = "block";
-    				resumeLong.style.display = "none";
-    				console.log("working");
-    			}
-    			else { 
-    				resumeLong.style.display = "block";
-    				resumeWide.style.display = "none";
-    				console.log("go to portrait!");
-    			}
-	});
-	
-	
-	reel.addEventListener('click', function () {
-		featurepagecontainerResume.style.display = "flex";
-		closebuttonintropage.style.display = "block";
-		header.style.display = "none";
-		intro.style.display = "none";
-		notblock.style.display = "none";
-		
-				if (w > h) {
-    				resumeWide.style.display = "block";
-    				resumeLong.style.display = "none";
-    				console.log("working");
-    			}
-    			else { 
-    				resumeLong.style.display = "block";
-    				resumeWide.style.display = "none";
-    				console.log("go to portrait!");
-    			}
-	});
-	
-	nikepage.addEventListener('click', function () {
-		featurepagecontainerNike.style.display = "flex";
-		close.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	carnationpage.addEventListener('click', function () {
-		featurepagecontainerCarnation.style.display = "flex";
-		closebutton10.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	Fpage.addEventListener('click', function () {
-		featurepagecontainerCarnation.style.display = "flex";
-		closebutton10.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	nk.addEventListener('click', function () {
-		featurepagecontainerNike.style.display = "flex";
-		close.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	flowerpage.addEventListener('click', function () {
-		featurepagecontainerFlower.style.display = "flex";
-		closebutton2.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	
-	acepage.addEventListener('click', function () {
-		featurepagecontainerFlower.style.display = "flex";
-		closebutton2.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	benpage.addEventListener('click', function () {
-		featurepagecontainerBenZ.style.display = "flex";
-		closebutton3.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	ben.addEventListener('click', function () {
-		featurepagecontainerBenZ.style.display = "flex";
-		closebutton3.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	follows.addEventListener('click', function () {
-		featurepagecontainerItFollows.style.display = "flex";
-		closebutton1.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	cmpageM.addEventListener('click', function () {
-		featurepagecontainerItFollows.style.display = "flex";
-		closebutton1.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	lilW.addEventListener('click', function () {
-		featurePageContainerLilies.style.display = "flex";
-		closebutton4.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	lilWhite.addEventListener('click', function () {
-		featurePageContainerLilies.style.display = "flex";
-		closebutton4.style.display = "inline-block";
-		imagecontainer.style.display = "none";
-		header.style.display = "none";
-	});
-	
-	featurepage.addEventListener('click', function () {
+  watchpage.addEventListener('click', function(){gotoPage('smartwatch')});
+
+	golf.addEventListener('click', function(){gotoPage('smartwatch')});
+
+	luxpage.addEventListener('click', function(){gotoPage('lux')});
+
+	luximage.addEventListener('click', function(){gotoPage('lux')});
+
+	resumepage.addEventListener('click', function(){gotoPage('resume')});
+
+	reel.addEventListener('click', function(){gotoPage('resume')});
+
+	nikepage.addEventListener('click', function (){gotoPage('nike')});
+
+  nk.addEventListener('click', function (){gotoPage('nike')});
+
+	carnationpage.addEventListener('click', function (){gotoPage('carnation')});
+
+	Fpage.addEventListener('click', function (){gotoPage('carnation')});
+
+	flowerpage.addEventListener('click', function (){gotoPage('flower')});
+
+	acepage.addEventListener('click', function (){gotoPage('flower')});
+
+	benpage.addEventListener('click', function (){gotoPage('benz')});
+
+	ben.addEventListener('click', function (){gotoPage('benz')});
+
+	follows.addEventListener('click', function (){gotoPage('follows')});
+
+	cmpageM.addEventListener('click', function (){gotoPage('follows')});
+
+	lilW.addEventListener('click', function (){gotoPage('lillies')});
+
+	lilWhite.addEventListener('click', function (){gotoPage('lillies')});
+
+	/*featurepage.addEventListener('click', function () {
 		featurepagecontainer.style.display = "none";
 		close.style.display = "none";
-	});
-	
-	closebutton4.addEventListener('click', function () {
-		featurePageContainerLilies.style.display = "none";
-		closebutton3.style.display = "none";
-		imagecontainer.style.display = "flex";
-		header.style.display = "flex";
-	});
-	
-	closebutton5.addEventListener('click', function () {
-		featurepagecontainerLux.style.display = "none";
-		closebutton5.style.display = "none";
-		imagecontainer.style.display = "flex";
-		header.style.display = "flex";
-	});
-	
-	closebutton6.addEventListener('click', function () {
-		featurepagecontainerSmartW.style.display = "none";
-		closebutton6.style.display = "none";
-		imagecontainer.style.display = "flex";
-		header.style.display = "flex";
-	});
-	
-	closebutton10.addEventListener('click', function () {
-		featurepagecontainerCarnation.style.display = "none";
-		closebutton10.style.display = "none";
-		imagecontainer.style.display = "flex";
-		header.style.display = "flex";
-	});
-	
-	closebutton1.addEventListener('click', function () {
-		featurepagecontainerItFollows.style.display = "none";
-		closebutton1.style.display = "none";
-		imagecontainer.style.display = "flex";
-		header.style.display = "flex";
-	});
-	
-	closebutton8.addEventListener('click', function () {
-		featurepagecontainerResume.style.display = "none";
-		closebutton8.style.display = "none";
-		imagecontainer.style.display = "flex";
-		header.style.display = "flex";
-		notblock.style.display = "block";
-	});
-	
-	closebuttonintropage.addEventListener('click', function () {
+	});*/
+
+	closebutton4.addEventListener('click', function () {gotoPage('portfolio')});
+
+	closebutton5.addEventListener('click', function () {gotoPage('portfolio')});
+
+	closebutton6.addEventListener('click', function () {gotoPage('portfolio')});
+
+	closebutton10.addEventListener('click', function () {gotoPage('portfolio')});
+
+	closebutton1.addEventListener('click', function () {gotoPage('portfolio')});
+
+	closebutton8.addEventListener('click', function () {gotoPage('portfolio')});
+
+	/*closebuttonintropage.addEventListener('click', function () {
 		featurepagecontainerResume.style.display = "none";
 		closebuttonintropage.style.display = "none";
 		intro.style.display = "flex";
-	});
-	
-	closebutton2.addEventListener('click', function () {
-		featurepagecontainerFlower.style.display = "none";
-		closebutton2.style.display = "none";
-		imagecontainer.style.display = "flex";
-		header.style.display = "flex";
-	});
-	
-	closebutton3.addEventListener('click', function () {
-		featurepagecontainerBenZ.style.display = "none";
-		closebutton3.style.display = "none";
-		imagecontainer.style.display = "flex";
-		header.style.display = "flex";
-	});
-	
-	
-	close.addEventListener('click', function () {
-		featurepagecontainerNike.style.display = "none";
-		close.style.display = "none";
-		imagecontainer.style.display = "flex";
-		header.style.display = "flex";
-	});
-	
+	});*/
+
+	closebutton2.addEventListener('click', function () {gotoPage('portfolio')});
+
+	closebutton3.addEventListener('click', function () {gotoPage('portfolio')});
+
+	close.addEventListener('click', function () {gotoPage('portfolio')});
+
 	close.addEventListener('mouseover', function () {
 		close.style.width = 20;
 		console.log("hello");
 		close.style.color = "blue";
 	});
-	
-	
-	viewWork.addEventListener('click', function () {
-// 		intro.className = 'textfadeout';
-		viewWork.style.animationName = "mymove6";
-		dash.style.animationName = "mymove6";
-		reel.style.animationName = "mymove6";
-		designer.style.animationName = "mymove8";
-		designer.style.animationDuration = "3s";
-		line.style.animationName = "mymove6";
-
-		
-		
-		if (viewWork.style.animationName == 'mymove6') { 
-				console.log ("execute");
-				
-				
-				setTimeout(function(){
-					intro.style.display = "none";
-					imagecontainer.style.display = "flex";
-					notblock.style.display = "block";
-					header.style.display = "flex";
-				}, 2000);
-			}
-			
-				setTimeout(function(){
-					
-					myname.style.animationName = "mymove7";
-					lastname.style.animationName = "mymove7";
-					lastname.style.animationDuration = "2.5s";
-					myname.style.animationDuration = "2.0s";
-					textcontainer.style.animationName = "fadeout"
-				}, 350);
-    			
-		
-		
-	});
-	
-	
 
 
-	
+	viewWork.addEventListener('click', launchPortfolio);
 
-	
+  function launchPortfolio() {
+    transitionFromSplashToPortfolio();
+  }
+
+  function transitionFromSplashToPortfolio() {
+    viewWork.style.animationName = "mymove6";
+    dash.style.animationName = "mymove6";
+    reel.style.animationName = "mymove6";
+    designer.style.animationName = "mymove8";
+    designer.style.animationDuration = "3s";
+    line.style.animationName = "mymove6";
+
+    setTimeout(fadeOutSplash, 350);
+    setTimeout(showPortfolio, 2000);
+  }
+
+  function fadeOutSplash() {
+    myname.style.animationName = "mymove7";
+    lastname.style.animationName = "mymove7";
+    lastname.style.animationDuration = "2.5s";
+    myname.style.animationDuration = "2.0s";
+    textcontainer.style.animationName = "fadeout";
+  }
+
+  function showPortfolio() {
+    gotoPage('portfolio');
+  }
+
+  var stateLaunchers = {
+    portfolio: launchPortfolio
+  };
+  var currentState = "";
+  function gotostate(state) {
+    if(typeof stateLaunchers[state] !== 'undefined' ) {
+      stateLaunchers[state]();
+    }
+    currentState = state;
+    globalContainer.className = state;
+  }
+
+  var state = "";
+  function handleHash() {
+    if(window.location.hash.length > 1 ) {
+      state = window.location.hash.substr(1);
+    } else {
+      state = 'intro';
+    }
+    gotostate(state);
+  }
+  handleHash();
+  window.onhashchange = handleHash;
 }
-
-

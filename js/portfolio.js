@@ -124,13 +124,7 @@ window.onload = function () {
 
 	closebutton1.addEventListener('click', function () {gotoPage('portfolio')});
 
-	closebutton8.addEventListener('click', function () {gotoPage('portfolio')});
-
-	/*closebuttonintropage.addEventListener('click', function () {
-		featurepagecontainerResume.style.display = "none";
-		closebuttonintropage.style.display = "none";
-		intro.style.display = "flex";
-	});*/
+	closebutton8.addEventListener('click', function () {gotoPage(previousState)});
 
 	closebutton2.addEventListener('click', function () {gotoPage('portfolio')});
 
@@ -140,51 +134,54 @@ window.onload = function () {
 
 	close.addEventListener('mouseover', function () {
 		close.style.width = 20;
-		console.log("hello");
 		close.style.color = "blue";
 	});
-
 
 	viewWork.addEventListener('click', launchPortfolio);
 
   function launchPortfolio() {
-    transitionFromSplashToPortfolio();
+    if(currentState === "" || currentState === "intro") {
+      transitionFromSplashToPortfolio();
+    } else {
+      showPortfolio();
+    }
   }
 
   function transitionFromSplashToPortfolio() {
-    viewWork.style.animationName = "mymove6";
+    intro.className = "startingIntroFadeout";
+
+    /*viewWork.style.animationName = "mymove6";
     dash.style.animationName = "mymove6";
     reel.style.animationName = "mymove6";
     designer.style.animationName = "mymove8";
     designer.style.animationDuration = "3s";
-    line.style.animationName = "mymove6";
+    line.style.animationName = "mymove6";*/
 
     setTimeout(fadeOutSplash, 350);
     setTimeout(showPortfolio, 2000);
   }
 
   function fadeOutSplash() {
-    myname.style.animationName = "mymove7";
+    intro.className = "finishIntroFadeout";
+    /*myname.style.animationName = "mymove7";
     lastname.style.animationName = "mymove7";
     lastname.style.animationDuration = "2.5s";
     myname.style.animationDuration = "2.0s";
-    textcontainer.style.animationName = "fadeout";
+    textcontainer.style.animationName = "fadeout";*/
   }
 
   function showPortfolio() {
-    gotoPage('portfolio');
+    intro.className = "";
+    globalContainer.className = 'portfolio';
   }
 
-  var stateLaunchers = {
-    portfolio: launchPortfolio
-  };
   var currentState = "";
+  var previousState = "";
   function gotostate(state) {
-    if(typeof stateLaunchers[state] !== 'undefined' ) {
-      stateLaunchers[state]();
-    }
-    currentState = state;
     globalContainer.className = state;
+    // Record the current state for posterity :)
+    previousState = currentState;
+    currentState = state;
   }
 
   var state = "";

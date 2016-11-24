@@ -139,7 +139,6 @@ h2 {
 	padding-left: 15px;
 }
 
-
 #designer {
 	animation-name: mymove3;
 	animation-duration: 1.6s;
@@ -215,6 +214,35 @@ h2 {
 	line-height: 0px;
 /* 	cursor: pointer; */
 }
+
+/* ---------------------------------------- Transitional Animations ---------------------------------------  */
+.intro .startingIntroFadeout #view,
+.intro .startingIntroFadeout #dash,
+.intro .startingIntroFadeout #reel,
+.intro .startingIntroFadeout #line {
+	animation-name: mymove6;
+}
+
+.intro .startingIntroFadeout #designer {
+	animation-name: mymove8;
+  animation-duration: 3s;
+}
+
+.intro .finishIntroFadeout #myname {
+  animation-name: mymove6;
+  animation-duration: 2.0s;
+}
+.intro .finishIntroFadeout #lastname {
+  animation-name: mymove7;
+  animation-duration: 2.5s;
+}
+
+.intro .finishIntroFadeout .bg {
+	animation-name: fadeout;
+}
+
+
+
 
 
 /* ---------------------------------------- Button Overlay ------------------------------------------------  */
